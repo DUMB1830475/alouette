@@ -6,6 +6,13 @@ class Alouette {
 	 * @param string $qualite - La qualité que l'on donne à l'oiseau (gentille)
 	 * @return string
 	 */
+	static public function titre (){
+		$reponse ='';
+		$reponse .='<h1>Pigeon, ';
+		$reponse .='gentille ';
+		$reponse .='Alouette</h1>';
+		return $reponse;
+	}
 
 
 	/** Méthode chanson
@@ -64,7 +71,12 @@ class Alouette {
 	 * @return string
 	 * @note L'appel est dans un div.appel et la réponse, dans un div.reponse
 	 */
-
+	static public function appelReponse (){
+		$reponse ='';
+		$reponse .='<div class="appel">Je te plumerai la tête</div>';
+		$reponse .='<div class="reponse">Je te plumerai la tête</div>';
+		return $reponse;
+	}
 
 	/** Méthode enumMembres
 	 * Génère l'énumération des membres passée en paramètre.
@@ -81,6 +93,7 @@ class Alouette {
 	 * @uses appelReponse
 	 * @return string
 	 */
+	
 
 
 }
